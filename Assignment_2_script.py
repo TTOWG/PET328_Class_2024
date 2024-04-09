@@ -8,14 +8,14 @@
 # Run the file to be sure it is working.
 
 # Receiving input parameters
-poro = input("What is the reservoir porosity")
+
 area = input("What is the acreage of the reservoir")
 h = input("What is the thickness of the reservoir")
+poro = input("What is the reservoir porosity")
 sw = input("What is the water saturation of the reservoir")
 boi = input("What is formation volume factor of the reservoir fluid")
 
-# Calculating STOIIP
-N = (7758*area*h*poro*(1-sw))/boi
+
 
 
 # The input parameters received with the Function input
@@ -23,12 +23,15 @@ N = (7758*area*h*poro*(1-sw))/boi
 # They needed to be converted to numbers for them
 # to be usable in calculation of STOIIP.
 # The conversion is done with Function float
-poro = float(poro)
+
 area = float(area)
 h = float(h)
+poro = float(poro)
 sw = float(sw)
 boi = float(boi)
 
+# Calculating STOIIP
+N = (7758*area*h*poro*(1-sw))/boi
 
 # Displaying the output
 print('The amount of oil initially in place is ', N)
