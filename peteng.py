@@ -154,4 +154,5 @@ def stoiip_discretized_2(Lx, Ly, h, nx, ny, boi, poro_list, swi_list):
             block_stoiip = (7758*area*h*poro*(1-sw))/boi
             stoiip_dict[block_label] = block_stoiip  
             total_stoiip = total_stoiip + block_stoiip
-    return (total_stoiip, stoiip_dict)    
+    return (total_stoiip, stoiip_dict)
+
